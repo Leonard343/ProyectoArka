@@ -1,0 +1,113 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.content {
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+    font-size: 20px;
+}
+
+/* Estilo para el formulario de añadir productos */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto 20px auto;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"] {
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Estilo para la lista de productos */
+.product-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: left;
+    position: relative;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-item button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+/* Estilos generales de la cabecera */
+.header {
+    display: flex;
+    justify-content: space-between; /* Coloca el logo a la derecha y el título a la izquierda */
+    align-items: center;
+    padding: 10px;
+    background-color: #333; /* Cambia esto según el color de fondo de tu cabecera */
+    color: white;
+}
+
+/* Estilo específico del logo */
+.logo {
+    width: 50px; /* Ajusta el tamaño del logo */
+    height: 50px;
+    object-fit: contain; /* Asegura que la imagen mantenga su proporción */
+}
